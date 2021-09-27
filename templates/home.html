@@ -1,0 +1,276 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'resources/smooth-scroll.js' %}">
+    <title>Home</title>
+  </head>
+
+  <body data-spy="scroll" data-target="#main-nav" id="home">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+      <div class="container">
+        <a href="Home" class="navbar-brand">Road Maintenance System</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">     
+            <li class="nav-item">
+              <a class="nav-item" href="data">view data</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <header id="home-section">
+      <div class="dark-overlay">
+        <div class="home-inner container">
+          <div class="row">
+            <div class="col-lg-8 d-none d-lg-block">
+              <h1 class="display-4">
+                Get your Problem's Solved here!! 
+              </h1>
+              <div class="d-flex">
+                <div class="p-4 align-self-start">
+                  <i class="fas fa-check fa-2x"></i>
+                </div>
+                <div class="p-4 align-self-end">
+                  Signup or Login to create a service request       
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div class="p-4 align-self-start">
+                  <i class="fas fa-check fa-2x"></i>
+                </div>
+                <div class="p-4 align-self-end">
+                  Simple and easy process to create a request
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div class="p-4 align-self-start">
+                  <i class="fas fa-check fa-2x"></i>
+                </div>
+                <div class="p-4 align-self-end">
+                  We try to solve your issue in less than three days
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION2 -->
+    <section id="section2">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1 class="display-4">Accessing</h1>
+            <p class="lead">You can access to our services and portal by Login or Signup</p>
+            <a href="#" class="btn btn-outline-secondary">Top</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION2-1 -->
+    <section id="section2-1" class="bg-light text-muted py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="{% static 'img/section2.jpg' %}" alt="" class="img-fluid mb-3 rounded-circle">
+          </div>
+          <div class="col-md-6">
+            <h3>Using Services</h3>
+            <p>Access our services from anywher using any device</p>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+               If you already have an user account on Maintenance System just login to access services
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                If you are a new customer click on Signup button on top of page to create a account
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION3 -->
+    <section id="section3" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1 class="display-4">Create a request</h1>
+            <p class="lead">To create a issue request follow the below procedure</p>
+            <a href="#" class="btn btn-outline-light">Top</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION3-1 -->
+    <section id="section3-1" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-2">
+            <img src="{% static 'img/section3.jpg' %}" alt="" class="img-fluid mb-3 rounded-circle">
+          </div>
+          <div class="col-md-6 order-1">
+            <h3>Submitting an request</h3>
+            <p>Just login to your account and create a request mentioning your issue</p>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+               Submit your issue by selecting proper category and proper description of problem
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Our Maintenance council team will look into your problem and give you a solution in 3 days
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION4 -->
+    <section id="section4" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1 class="display-4">Satisfaction</h1>
+            <p class="lead">We want to see smile on your face that's why we are here</p>
+            <a href="#" class="btn btn-outline-light">Top</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION4-1 -->
+    <section id="section4-1" class="bg-light text-muted py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="{% static 'img/section4.jpg' %}" alt="" class="img-fluid mb-3 rounded-circle">
+          </div>
+          <div class="col-md-6">
+            <h3>Service Satisfaction</h3>
+            <p>Smile and smile that's only thing we want to see on our face.</p>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Our team work's hard to get a solution of your problem that's perfectly fit in your problem.
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+               The solution we provide will create a smile on your face that's what we want to see.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-4">
+            <h3>Maintenance System</h3>
+            <p>Copyright @  Mintenance System 2019 &copy;
+              <span id="year"></span>
+            </p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CONTACT MODAL -->
+    <form action="contactus_form" method="POST">
+      {% csrf_token %}
+    <div class="modal fade text-dark" id="contactModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Us</h5>
+            <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+            <form action="contactus_form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary btn-block">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+
+    <!-------------- SMOOTH SCROLL --------------->
+    <script src="{% static 'resources/smooth-scroll.js' %}"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000
+      });
+    </script>
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+  </body>
+
+</html>
